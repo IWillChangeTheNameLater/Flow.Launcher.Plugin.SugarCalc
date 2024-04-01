@@ -7,6 +7,6 @@
   "Version": "0.1",
   "Language": "python",
   "Website": "https://github.com/IWillChangeTheNameLater/Flow.Launcher.Plugin.SugarCalc",
-  "IcoPath": "icon.png",
+  "IcoPath": "assets/icon.png",
   "ExecuteFileName": "main.py"
 }

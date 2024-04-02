@@ -2,7 +2,7 @@
   "ID": "aef3972309654483bcc4688a2029ba09",
   "ActionKeyword": "=",
   "Name": "SugarCalc",
-  "Description": "A plugin for Flow Launcher that allows you to calculate conveniently by providing a lot of syntactic sugar.",
+  "Description": "Calculate using a flexible and comfortable calculator!",
   "Author": "IWillChangeTheNameLater",
   "Version": "0.1",
   "Language": "python",

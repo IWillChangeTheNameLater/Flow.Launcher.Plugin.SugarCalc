@@ -14,11 +14,11 @@ jobs:
       python_ver: '3.12.1'
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4.1.1
+      - name: Set up Python ${{ matrix.python-ver }}
+        uses: actions/setup-python@v5.1.0
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{ matrix.python-ver }}
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release

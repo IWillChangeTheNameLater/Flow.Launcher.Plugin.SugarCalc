@@ -1,1 +1,1 @@
-from sugar_calc import SugarCalc
+from .sugar_calc import SugarCalc

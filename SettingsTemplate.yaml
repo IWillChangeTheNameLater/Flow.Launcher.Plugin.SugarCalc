@@ -1,7 +1,6 @@
 body:
   - type: textBlock
     attributes:
-      name: plugin_desc
       description: >-
         A plugin for Flow Launcher that allows you to calculate conveniently 
         by providing a lot of syntactic sugar.

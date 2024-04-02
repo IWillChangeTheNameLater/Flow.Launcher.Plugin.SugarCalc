@@ -1,4 +1,17 @@
+from typing import Literal, TypeAlias
+
 from flowlauncher import FlowLauncher
+
+
+RoundingDirection: TypeAlias = Literal[
+    'Round half up',
+    'Round down',
+    'Round up',
+    'Round toward zero',
+    'Round away from zero',
+    'Round to even',
+    'Round to odd',
+]
 
 
 class SugarCalc(FlowLauncher):

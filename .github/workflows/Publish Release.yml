@@ -11,7 +11,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      python_ver: 3.12.1
+      python_ver: '3.12.1'
 
     steps:
       - uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
           zip -r Flow.Launcher.Plugin.SugarCalc.zip . -x '*.git*'
       - name: Publish
         if: success()
-        uses: softprops/action-gh-release@v1
+        uses: actions/create-release@v1
         with:
           files: 'Flow.Launcher.Plugin.SugarCalc.zip'
           tag_name: "v${{steps.version.outputs.prop}}"

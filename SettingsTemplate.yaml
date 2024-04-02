@@ -1,0 +1,60 @@
+body:
+  - type: textBlock
+    attributes:
+      name: plugin_desc
+      description: >-
+        A plugin for Flow Launcher that allows you to calculate conveniently 
+        by providing a lot of syntactic sugar.
+        
+        You can use the following character to calculate something: 
+        "/ * ^ - +".
+  - type: checkbox
+    attributes:
+      name: show_history
+      label: Show the results history
+      description: Show latest calculation results
+      defaultValue: false
+  - type: input
+    attributes:
+      name: latest_result_char
+      label: Last result character
+      description: >-
+        This is a symbol whose value in the expression will be equal to 
+        the last copied calculation result.
+        
+        For example, if the value of this field is "x", and 
+        you copy the result of the expression "2+2", which equals 4, 
+        and then you try to calculate "x*2", you will get 8.
+      defaultValue: x
+  - type: input
+    attributes:
+      name: number_of_decimals
+      label: Number of decimals
+      description: >-
+        The number of decimals to round to. 
+        Leave the field empty if you want to see as many decimal places as possible.
+  - type: dropdown
+    attributes:
+      name: rounding_direction
+      label: Rounding direction
+      description: Choose the direction to round (round 1.5 to 1.5, 1 or 2).
+      defaultValue: Round half up
+      options:
+        - Round half up
+        - Round down
+        - Round up
+        - Round toward zero
+        - Round away from zero
+        - Round to even
+        - Round to odd
+  - type: textarea
+    attributes:
+      name: signs_aliases
+      label: Signs aliases
+      description: >-
+        Aliases are alternative symbols for mathematical operators. 
+        If you want to change the character to another one, write the default character, 
+        and then, separated by a space, write the characters that you want to use instead of the default one.
+        
+        For example, if you want to use the signs ":", "\" or "|" instead of the default division sign "/", 
+        write "/ : \ |". Separate aliases for different characters with a newline character (Enter).
